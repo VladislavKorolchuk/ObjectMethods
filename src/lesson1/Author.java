@@ -11,13 +11,16 @@ public class Author {
         this.surnameAuthors = surnameAuthors;
     }
 
-    public String getNameAuthors() {
+    @Override
+    public String toString() {
+        return nameAuthors + ' ' + surnameAuthors;
+    }
 
+    public String getNameAuthors() {
         return nameAuthors;
     }
 
     public String getSurnameAuthors() {
-
         return surnameAuthors;
     }
 
